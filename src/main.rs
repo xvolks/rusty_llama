@@ -59,6 +59,8 @@ cfg_if! {
                 context_size: 2048,
                 lora_adapters: None,
                 use_gpu: true,
+                gpu_layers: None,
+                .. Default::default()
             };
 
             llm::load::<Llama>(
